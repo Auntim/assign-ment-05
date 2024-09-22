@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky w-full  p-0 bg-slate-100 top-0">
         <nav class="bg-[#F9F7F3] pt-6 pb-6">
             <div class="flex justify-around">
                 <div class="">
-                    <h3 class="text-2xl font-bold p-3 rounded-md bg-[#B4F461]">Blog</h3>
+                   <a class="text-2xl font-bold p-4 rounded-md bg-[#B4F461]" href="/first.html">Blog</a>
                 </div>
                 <div class="flex gap-3">
                     <img class="" src="assets/logo.png" alt="">
@@ -24,16 +24,177 @@
                 <div class="flex gap-2">
                     <img class="w-30 h-10" src="assets/coin.png" alt="">
                     <h3 class="text-[25px] font-semibold">$5000 BDT</h3>
+
                 </div>
             </div>
         </nav>
         <div class="flex gap-8 justify-center my-12">
             <button class="p-5 text-[20px] font-semibold rounded-lg bg-[#B4F461]">Donation</button>
-            <button class="p-4  text-[20px] font-semibold rounded-lg bg-[#f9f7f3] border border-zinc-300">History</button>
+            <button
+                class="p-4  text-[20px] font-semibold rounded-lg bg-[#f9f7f3] border border-zinc-300">History</button>
         </div>
     </header>
-    <main class="container mx-auto">
-        
+    <main class="container mx-auto bg-gray-100">
+        <div class=" mx-auto mt-10 border border-gray-400 p-4 rounded-lg">
+            <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden gap-10">
+                <!-- Image Section -->
+                <div class="">
+                    <img src="assets/noakhali.png" alt="Flood Relief" class="h-full w-full object-cover">
+                </div>
+
+
+                <div class="md:w-1/2 p-6 ">
+
+                    <div class="flex  items-center mb-2">
+                        <img src="assets/coin.png" alt="">
+                        <span class="text-gray-600 text-sm font-medium bg-gray-100 py-1 px-2 rounded">0 BDT</span>
+                    </div>
+
+
+                    <h2 class="text-xl font-bold text-gray-900">Donate for Flood at Noakhali, Bangladesh</h2>
+
+
+                    <p class="mt-4 text-gray-700 text-sm">
+                        The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your
+                        donation will help provide essential supplies to those affected by this disaster. Every
+                        contribution, big or small, makes a difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
+                    </p>
+
+
+                    <div class="mt-4">
+                        <input type="number"
+                            class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none  focus:ring-green-400"
+                            placeholder="Write Donation Amount">
+                    </div>
+
+
+                    <!-- <button class="mt-4 w-full bg-[#B4F461]  text-black font-bold py-2 text-[20px] rounded-lg ">
+                        Donate Now
+                    </button> -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+        <div class=" mx-auto mt-10 border border-gray-400 p-4 rounded-lg">
+            <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden gap-10">
+                <!-- Image Section -->
+                <div class="">
+                    <img src="assets/feni.png" alt="Flood Relief" class="h-full w-full object-cover">
+                </div>
+
+
+                <div class="md:w-1/2 p-6 ">
+
+                    <div class="flex  items-center mb-2">
+                        <img src="assets/coin.png" alt="">
+                        <span class="text-gray-600 text-sm font-medium bg-gray-100 py-1 px-2 rounded">0 BDT</span>
+                    </div>
+
+
+                    <h2 class="text-xl font-bold text-gray-900">Donate for Flood at Noakhali, Bangladesh</h2>
+
+
+                    <p class="mt-4 text-gray-700 text-sm">
+                        The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your
+                        donation will help provide essential supplies to those affected by this disaster. Every
+                        contribution, big or small, makes a difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
+                    </p>
+
+
+                    <div class="mt-4">
+                        <input type="number"
+                            class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none  focus:ring-green-400"
+                            placeholder="Write Donation Amount">
+                    </div>
+
+
+                    <!-- <button class="mt-4 w-full bg-[#B4F461]  text-black font-bold py-2 text-[20px] rounded-lg ">
+                        Donate Now
+                    </button> -->
+                    <button class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+        <div class=" mx-auto mt-10 border border-gray-400 p-4 rounded-lg">
+            <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden gap-10">
+                <!-- Image Section -->
+                <div class="">
+                    <img src="assets/quota-protest.png" alt="Flood Relief" class="h-full w-full object-cover">
+                </div>
+
+
+                <div class="md:w-1/2 p-6 ">
+
+                    <div class="flex  items-center mb-2">
+                        <img src="assets/coin.png" alt="">
+                        <span class="text-gray-600 text-sm font-medium bg-gray-100 py-1 px-2 rounded">0 BDT</span>
+                    </div>
+
+
+                    <h2 class="text-xl font-bold text-gray-900">Donate for Flood at Noakhali, Bangladesh</h2>
+
+
+                    <p class="mt-4 text-gray-700 text-sm">
+                        The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your
+                        donation will help provide essential supplies to those affected by this disaster. Every
+                        contribution, big or small, makes a difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
+                    </p>
+
+
+                    <div class="mt-4">
+                        <input type="number"
+                            class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none  focus:ring-green-400"
+                            placeholder="Write Donation Amount">
+                    </div>
+
+
+                    <!-- <button class="mt-4 w-full bg-[#B4F461]  text-black font-bold py-2 text-[20px] rounded-lg ">
+                        Donate Now
+                    </button> -->
+                    <button class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
