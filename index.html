@@ -7,7 +7,6 @@
     <title>Donate Bangladesh!</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body>
@@ -15,20 +14,22 @@
         <nav class="bg-[#F9F7F3] pt-6 pb-6">
             <div class="flex justify-around">
                 <div class="">
-                   <a class="text-2xl font-bold p-4 rounded-md bg-[#B4F461]" href="/first.html">Blog</a>
+                    <a class="text-2xl font-bold p-4 rounded-md bg-[#B4F461]" href="/first.html">Blog</a>
                 </div>
                 <div class="flex gap-3">
                     <img class="" src="assets/logo.png" alt="">
                     <h1 class="text-[20px] font-semibold ">Donate Bangladesh</h1>
                 </div>
                 <div class="flex gap-2">
-                    <img class="w-30 h-10" src="assets/coin.png" alt="">
-                    <h3 class="text-[25px] font-semibold">$5000 BDT</h3>
+                    <img class="w-8 h-8" src="assets/coin.png" alt="">
+                    <!-- <h3 id="total-balance" class="text-[25px] font-semibold">$5000</h3> -->
+                     <div id="total-balance" class="text-[20px]">5000</div>
+                    <h4 class="text-xl ">BDT</h4>
 
                 </div>
             </div>
         </nav>
-        <div class="flex gap-8 justify-center my-12">
+        <div class="flex gap-8 justify-center my-12 pb-3">
             <button class="p-5 text-[20px] font-semibold rounded-lg bg-[#B4F461]">Donation</button>
             <button
                 class="p-4  text-[20px] font-semibold rounded-lg bg-[#f9f7f3] border border-zinc-300">History</button>
@@ -47,7 +48,7 @@
 
                     <div class="flex  items-center mb-2">
                         <img src="assets/coin.png" alt="">
-                        <span class="text-gray-600 text-sm font-medium bg-gray-100 py-1 px-2 rounded">0 BDT</span>
+                        <span id="add-money" class="text-gray-600 text-sm font-medium bg-gray-100 py-1 px-2 rounded">0 BDT</span>
                     </div>
 
 
@@ -63,25 +64,26 @@
 
 
                     <div class="mt-4">
-                        <input type="number"
+                        <input id="amount-donation" type="number"
                             class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none  focus:ring-green-400"
                             placeholder="Write Donation Amount">
                     </div>
 
 
-                    <!-- <button class="mt-4 w-full bg-[#B4F461]  text-black font-bold py-2 text-[20px] rounded-lg ">
-                        Donate Now
-                    </button> -->
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    
+                    <button id="doante-now" class="btn text-2xl bg-[#b4f461] mt-2 w-full" >Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
-                            <h3 class="text-lg font-bold">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
+                            <h3 class="text-3xl items-center text-center font-bold mb-3">Congrates!</h3>
+                           <div class="item-center h-10 w-10 text-center flex justify-center mx-auto mt-3">
+                            <img class="text-center items-center flex justify-center" src="assets/coin.png" alt="">
+                           </div>
+                            <h2 class="text-xl opacity-80 text-center my-6">You have donate for human kind.</h2>
+                            <h2 class="text-xl font-bold text-center">Successfully</h2>
+                            <div class="modal-action text-center items-center">
                                 <form method="dialog">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
+                                    <button class="btn text-center items-center">Close confirmation</button>
                                 </form>
                             </div>
                         </div>
@@ -126,10 +128,13 @@
                     <!-- <button class="mt-4 w-full bg-[#B4F461]  text-black font-bold py-2 text-[20px] rounded-lg ">
                         Donate Now
                     </button> -->
-                    <button class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
+                    <button 
+                        class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold"
+                        onclick="my_modal_1.showModal()">Donate Now</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box">
                             <h3 class="text-lg font-bold">Hello!</h3>
+                            <h2>Congartulations</h2>
                             <p class="py-4">Press ESC key or click the button below to close</p>
                             <div class="modal-action">
                                 <form method="dialog">
@@ -179,10 +184,13 @@
                     <!-- <button class="mt-4 w-full bg-[#B4F461]  text-black font-bold py-2 text-[20px] rounded-lg ">
                         Donate Now
                     </button> -->
-                    <button class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold" onclick="my_modal_5.showModal()">Donate Now</button>
+                    <button 
+                        class="btn w-full mt-5 bg-[#b4f461] text-[20px] rounded-lg py-2 font-semibold"
+                        onclick="my_modal_2.showModal()">Donate Now</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box">
                             <h3 class="text-lg font-bold">Hello!</h3>
+                            <h2>Congartulations</h2>
                             <p class="py-4">Press ESC key or click the button below to close</p>
                             <div class="modal-action">
                                 <form method="dialog">
@@ -196,6 +204,7 @@
             </div>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

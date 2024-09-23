@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with DOM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+    <div class="max-w-lg mx-auto">
+        <!-- Accordion Item 1 -->
+        <details class="border border-gray-300 rounded mb-4">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-lg">
+                What is DOM (Document Object Model)?
+            </summary>
+            <div class="p-4 text-gray-600">
+                The DOM (Document Object Model) is a programming interface for web documents. It represents the
+                structure of a webpage so that programming languages (like JavaScript) can interact with and manipulate
+                the document's content, structure, and style.
+            </div>
+        </details>
+
+        <!-- Accordion Item 2 -->
+        <details class="border border-gray-300 rounded mb-4">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-lg">
+                Why use DOM in JS?
+            </summary>
+            <div class="p-4 text-gray-600">
+                Using the DOM (Document Object Model) in JavaScript is essential for creating dynamic, interactive web
+                pages. The DOM allows JavaScript to interact with and manipulate the content, structure, and style of a
+                web page in real-time. Here’s why the DOM is so crucial in JavaScript:
+                <br>
+                <hr>
+                1. Dynamic Content Manipulation
+                With the DOM, you can change the content of an HTML page without requiring a page reload. This allows
+                for dynamic updates, such as changing text, images, or other elements based on user interaction.
+                <br>
+                <hr>
+                2. Handling User Interactions
+                The DOM provides event-handling mechanisms (e.g., clicks, keyboard input, form submissions) so
+                JavaScript can respond to user interactions.
+                <br>
+                <hr>
+                3. Style and Attribute Manipulation
+                JavaScript can modify the CSS styles or HTML attributes of elements via the DOM, allowing for dynamic
+                styling based on user actions or conditions.
+            </div>
+        </details>
+
+        <!-- Accordion Item 3 -->
+        <details class="border border-gray-300 rounded">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-lg">
+                How it works in Websie?
+            </summary>
+            <div class="p-4 text-gray-600">
+                The DOM (Document Object Model) works in a website by acting as an interface between the webpage's
+                structure (HTML) and JavaScript, allowing dynamic changes to the page content, structure, and style.
+                Here's an overview of how the DOM operates in a website and how it interacts with HTML, CSS, and
+                JavaScript:
+                <br>
+
+                1. Page Load and DOM Creation:
+                When a web browser loads a webpage, it first fetches the HTML document from the server.
+                The browser then parses the HTML document and constructs the DOM. The DOM is essentially a tree-like
+                structure where each HTML element (like <div>, <p>, etc.) becomes a "node" in this tree.
+                        As the browser parses the HTML, it creates the DOM in memory, so JavaScript can interact with it
+                        later.
+                        <br>
+                        <hr>
+                        2. DOM Representation
+                        The DOM represents the entire structure of the webpage in a hierarchical tree form. Every HTML
+                        element, attribute, and text becomes a part of this tree.
+                        <br>
+                        <hr>
+                        3. DOM and CSS
+                        Once the DOM is created, the browser then parses the CSS (Cascading Style Sheets) that are
+                        linked or embedded in the HTML.
+                        The browser applies styles to the DOM elements based on CSS rules. The visual representation of
+                        the page is determined by applying these styles to the DOM nodes.
+                </div>
+        </details>
+    </div>
+</body>
+
+</html>
