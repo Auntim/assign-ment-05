@@ -47,12 +47,12 @@ donateButton.addEventListener('click', function () {
 });
 
 
-const back = document.getElementById('blog')
-back.addEventListener('click',function(event){
-    window.location.href = './blog.html';
-    event.preventDefault();
-    // console.log('blog');
-})
+// const back = document.getElementById('blog')
+// back.addEventListener('click',function(event){
+//     window.location.href = './blog.html';
+//     event.preventDefault();
+//     // console.log('blog');
+// })
 
 function showSectionById(id){
     document.getElementById('donation-section').classList.add('hidden')
