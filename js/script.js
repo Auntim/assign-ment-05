@@ -28,7 +28,8 @@ donateButton.addEventListener('click', function () {
         // div.classList.add('bg-slate-50 border border-slate-300')
         div.innerHTML = `
         <h1 class="text-[25px] font-bold my-3 text-lime-700">${totalDonatedAmount} Taka is Donated for famine-2024 Feni,Bangladesh</h1>
-        <p class="text-[16px] font-semibold opacity-70 mt-3">Date:Tue Sep 23 2024 08-34-22 GMT +0600(Bangladesh Standard Time)</p>
+        <p class="text-[16px] font-semibold opacity-70 mt-3 mb-3">Date:Tue Sep 23 2024 08-34-22 GMT +0600(Bangladesh Standard Time)</p>
+        <hr>
         `
 
         document.getElementById('transection-container').appendChild(div);
@@ -41,12 +42,14 @@ donateButton.addEventListener('click', function () {
             alert('Please enter a valid donation amount.');
         }
     }
+    document.getElementById('my_modal_2').showModal();
+
 });
 
 
 const back = document.getElementById('blog')
 back.addEventListener('click',function(event){
-    window.location.href = '../blog.html';
+    window.location.href = './blog.html';
     event.preventDefault();
     // console.log('blog');
 })
@@ -68,7 +71,7 @@ donationButton.addEventListener('click', function () {
     donationButton.classList.add('bg-[#b4f461]');
     donationButton.classList.remove('bg-white');
 
-    historyButton.classList.remove('bg-[#b2f757]');
+    // historyButton.classList.remove('bg-[#f9f7f3]');
     historyButton.classList.add('bg-white');
 })
 
@@ -76,6 +79,9 @@ historyButton.addEventListener('click', function () {
     historyButton.classList.add('bg-[#b2f757]');
     historyButton.classList.remove('bg-white');
 
-    donationButton.classList.remove('bg-[#b4f461]');
+    donationButton.classList.remove('bg-[#b2f757]');
     donationButton.classList.add('bg-white');
 })
+
+
+
