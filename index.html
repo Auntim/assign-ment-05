@@ -21,7 +21,7 @@
 
 <body>
     <header class="sticky w-full  p-0 top-0 z-50 bg-while/30 backdrop-blur-lg shadow-md">
-        <nav class="bg-[#F9F7F3] pt-6 pb-6">
+        <nav class="z-50 bg-white/30 backdrop-blur-lg shadow-lg pt-6 pb-6 ">
             <div class="flex justify-around">
                 <div class="">
                     <a id="blog" class="text-2xl font-bold px-6 py-4 rounded-lg bg-[#B4F461]" href="/blog.html">Blog</a>
@@ -37,17 +37,19 @@
 
                 </div>
             </div>
+
+            <div class="flex gap-8 justify-center mt-10">
+
+                <button id="donation-button"
+                    class="p-4 text-[20px] font-semibold rounded-lg bg-[#b2f757] border border-zinc-300"
+                    >Donation</button>
+                <button id="history-button"
+                    class="p-4  text-[20px] font-semibold rounded-lg bg-[#f9f7f3] border border-zinc-300" >History</button>
+            </div>
         </nav>
 
 
-        <div class="flex gap-8 justify-center my-6 pb-3">
-
-            <button id="donation-button"
-                class="p-4 text-[20px] font-semibold rounded-lg bg-[#b2f757] border border-zinc-300"
-                >Donation</button>
-            <button id="history-button"
-                class="p-4  text-[20px] font-semibold rounded-lg bg-[#f9f7f3] border border-zinc-300" >History</button>
-        </div>
+        
     </header>
     <main id="donation-section" class="container mx-auto  mb-6">
         <div class=" mx-auto mt-10 border border-gray-400 p-4 rounded-lg">

@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accordion with DOM</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-100 p-6">
-    <div class="max-w-lg mx-auto">
-        <h1 class="text-3xl font-bold my-4">Important FAQ!</h1>
+    <div class="w-4/5 mx-auto">
+        <a id="blog" class="text-2xl font-bold px-4 py-3 mb-6 rounded-lg bg-[#B4F461]" href="/index.html">Home  <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        <h1 class="text-4xl font-bold my-6">Important FAQ! <span><i class="fa-regular fa-circle-question"></i></span>
+        </h1>
         <!-- Accordion Item 1 -->
-        <details class="border border-gray-300 rounded mb-4">
-            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-lg">
+        <details class="border border-gray-300 rounded mb-4 ">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-2xl ">
                 What is DOM (Document Object Model)?
             </summary>
             <div class="p-4 text-gray-600">
@@ -25,7 +30,7 @@
 
         <!-- Accordion Item 2 -->
         <details class="border border-gray-300 rounded mb-4">
-            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-lg">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-2xl">
                 Why use DOM in JS?
             </summary>
             <div class="p-4 text-gray-600">
@@ -52,7 +57,7 @@
 
         <!-- Accordion Item 3 -->
         <details class="border border-gray-300 rounded">
-            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-lg">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-2xl">
                 How it works in Website?
             </summary>
             <div class="p-4 text-gray-600">
@@ -81,6 +86,40 @@
                         The browser applies styles to the DOM elements based on CSS rules. The visual representation of
                         the page is determined by applying these styles to the DOM nodes.
                 </div>
+        </details>
+        <!-- accordian Item-4 -->
+        <details class="border border-gray-300 rounded mb-4 mt-4">
+            <summary class="bg-gray-200 cursor-pointer p-4 font-medium text-2xl">
+                How do you select an element from the DOM?
+            </summary>
+            <div class="p-4 text-gray-600">
+                To select an element from the DOM, JavaScript provides multiple methods, each useful for different
+                scenarios. The DOM (Document Object Model) represents the structure of a webpage, and these methods
+                allow you to access or modify the elements within it. Here's a brief explanation of the most commonly
+                used DOM selection methods:
+                <br>
+                <hr>
+
+                1. getElementById()
+                What it does: Selects an element by its unique id attribute.
+                When to use: Use this when you know the id of an element and need to select it. IDs should be unique
+                across the entire document.
+                Example: If an element has id="header", this method will return that specific element.
+                <br>
+                <hr>
+                2. getElementsByClassName()
+                What it does: Selects all elements that have a particular class name.
+                When to use: Use this when you want to select all elements with a certain class. This method returns an
+                array-like structure called an HTMLCollection.
+                Example: If multiple elements share the class button, this method will return all of them.
+                <br>
+                <hr>
+                3. getElementsByTagName()
+                What it does: Selects all elements with a specific tag name (like div, p, or button).
+                When to use: Use this when you need to retrieve all elements of a certain type, such as all div elements
+                on the page.
+                Example: If you want all p (paragraph) elements, this method will give you access to each one.
+            </div>
         </details>
     </div>
 </body>
