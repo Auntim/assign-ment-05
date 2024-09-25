@@ -71,7 +71,7 @@ donationButton.addEventListener('click', function () {
     donationButton.classList.add('bg-[#b4f461]');
     donationButton.classList.remove('bg-white');
 
-    // historyButton.classList.remove('bg-[#f9f7f3]');
+    historyButton.classList.remove('bg-[#f9f7f3]');
     historyButton.classList.add('bg-white');
 })
 
